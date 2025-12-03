@@ -286,5 +286,148 @@ export const QUIZ_2: Question[] = [
   }
 ];
 
+export const QUIZ_3: Question[] = [
+  {
+    id: 41,
+    question: "Quel est le principe physique fondamental pour qu'un matériau soit un bon isolant thermique ?",
+    options: ["Il doit être capable de conduire l'électricité.", "Il doit être très lourd et dense pour bloquer la chaleur.", "Il doit emprisonner de l'air immobile (conductivité très faible).", "Il doit être composé de métal pur."],
+    correctAnswerIndex: 2,
+    explanation: "L'air immobile est un très mauvais conducteur de chaleur, c'est la base de la plupart des isolants."
+  },
+  {
+    id: 42,
+    question: "Si l'on compare l'Isolation par l'Extérieur (ITE) et l'Isolation par l'Intérieur (ITI), quel est l'avantage majeur de l'ITE ?",
+    options: ["Elle est moins chère à installer.", "Elle réduit la surface habitable de la maison.", "Elle traite efficacement les ponts thermiques et préserve l'inertie du bâtiment.", "Elle ne nécessite aucun échafaudage."],
+    correctAnswerIndex: 2,
+    explanation: "L'ITE enveloppe le bâtiment, supprimant les ponts thermiques de structure et gardant la masse des murs à l'intérieur pour l'inertie."
+  },
+  {
+    id: 43,
+    question: "Quelle formule permet de calculer la Résistance Thermique (R) d'un isolant ?",
+    options: ["R = épaisseur (e) / conductivité thermique (λ)", "R = conductivité thermique (λ) * épaisseur (e)", "R = 1 / épaisseur (e)", "R = épaisseur (e) + conductivité thermique (λ)"],
+    correctAnswerIndex: 0,
+    explanation: "Plus l'épaisseur est grande et la conductivité faible, plus la résistance R est élevée."
+  },
+  {
+    id: 44,
+    question: "Qu'est-ce qu'un 'pont thermique' ?",
+    options: ["Un système de chauffage performant.", "Une passerelle reliant deux bâtiments isolés.", "Une zone de faiblesse dans l'enveloppe du bâtiment par où la chaleur s'échappe.", "Un matériau isolant posé au sol."],
+    correctAnswerIndex: 2,
+    explanation: "C'est une rupture dans la continuité de l'isolant (jonction mur/dalle, angles) qui laisse fuir la chaleur."
+  },
+  {
+    id: 45,
+    question: "Outre l'aspect thermique, quelle autre propriété possèdent souvent les isolants fibreux (laines) ou poreux ?",
+    options: ["Ils sont imperméables à l'eau.", "Ils génèrent de l'électricité.", "Ils offrent une bonne absorption acoustique.", "Ils sont transparents."],
+    correctAnswerIndex: 2,
+    explanation: "La structure fibreuse ou poreuse piège les ondes sonores, offrant une bonne isolation phonique."
+  },
+  {
+    id: 46,
+    question: "Quel est le risque mortel principal des isolants synthétiques (Polyuréthane, Polystyrène) en cas d'incendie ?",
+    options: ["Ils fondent et créent une inondation.", "Ils dégagent des gaz/fumées toxiques.", "Ils deviennent radioactifs.", "Ils explosent violemment."],
+    correctAnswerIndex: 1,
+    explanation: "La combustion des plastiques libère des fumées très toxiques (cyanure, etc.) qui sont mortelles si inhalées."
+  },
+  {
+    id: 47,
+    question: "Pourquoi les laines minérales (verre, roche) ont-elles une énergie grise assez élevée ?",
+    options: ["Parce qu'elles viennent de la lune.", "Parce qu'elles contiennent du pétrole.", "Parce qu'elles nécessitent des fours à très haute température pour fondre le sable ou la roche.", "Parce qu'elles sont transportées par avion uniquement."],
+    correctAnswerIndex: 2,
+    explanation: "La fusion de la roche ou du verre demande une énergie considérable (haute température)."
+  },
+  {
+    id: 48,
+    question: "Parmi ces matériaux, lequel a l'énergie grise la plus élevée (env. 974 kWh/m³) ?",
+    options: ["La paille.", "La ouate de cellulose.", "Le Polyuréthane.", "Le liège."],
+    correctAnswerIndex: 2,
+    explanation: "Le Polyuréthane est un produit issu de la chimie lourde, très énergivore à fabriquer."
+  },
+  {
+    id: 49,
+    question: "Quel matériau naturel peut voir son bilan carbone alourdi s'il est importé de loin (transport) ?",
+    options: ["La paille locale.", "La fibre de coco.", "La laine de verre fabriquée sur place.", "Le polystyrène."],
+    correctAnswerIndex: 1,
+    explanation: "La fibre de coco provient souvent de pays tropicaux lointains, le transport dégrade son bilan écologique."
+  },
+  {
+    id: 50,
+    question: "Quel problème de santé est associé à la pose de la laine de verre ?",
+    options: ["Irritation de la peau et des voies respiratoires (fibres).", "Risque d'intoxication alimentaire.", "Brûlures chimiques graves immédiates.", "Perte de la vue."],
+    correctAnswerIndex: 0,
+    explanation: "Les fibres microscopiques sont irritantes pour la peau et les poumons lors de la manipulation."
+  },
+  {
+    id: 51,
+    question: "Quelle est la matière première de la ouate de cellulose ?",
+    options: ["Le coton neuf.", "La laine de mouton.", "Le papier journal recyclé.", "Le bois déchiqueté."],
+    correctAnswerIndex: 2,
+    explanation: "Elle est fabriquée en broyant du papier journal recyclé, auquel on ajoute des sels de bore."
+  },
+  {
+    id: 52,
+    question: "Quel avantage les isolants bio-sourcés (bois, chanvre) ont-ils sur le confort d'été par rapport aux synthétiques ?",
+    options: ["Ils refroidissent l'air comme un climatiseur.", "Leur densité plus élevée offre un meilleur déphasage thermique.", "Ils sont plus blancs et réfléchissent la lumière.", "Ils sont plus légers."],
+    correctAnswerIndex: 1,
+    explanation: "Leur capacité à stocker la chaleur (inertie) retarde l'entrée de la chaleur dans la maison en été."
+  },
+  {
+    id: 53,
+    question: "Quelle est la particularité de la culture du chanvre (Hemp) ?",
+    options: ["Elle nécessite beaucoup de pesticides.", "C'est une plante à croissance rapide, imputrescible et stockant du CO2.", "Elle ne pousse que dans les pays tropicaux.", "Elle nécessite énormément d'eau potable."],
+    correctAnswerIndex: 1,
+    explanation: "Le chanvre est très écologique : il pousse vite, sans pesticides, et absorbe beaucoup de CO2."
+  },
+  {
+    id: 54,
+    question: "Quel est l'inconvénient lié à la production du liège (Cork) ?",
+    options: ["L'arbre doit être abattu pour récolter le liège.", "Le liège pourrit à l'humidité.", "Il faut attendre 8 à 10 ans pour que l'écorce se reconstitue entre deux récoltes.", "C'est un produit dérivé du pétrole."],
+    correctAnswerIndex: 2,
+    explanation: "La ressource est renouvelable mais lente à se régénérer."
+  },
+  {
+    id: 55,
+    question: "Pour obtenir une isolation équivalente à 20 cm de polystyrène, quelle épaisseur de paille faut-il environ ?",
+    options: ["10 cm.", "20 cm.", "40 cm.", "1 mètre."],
+    correctAnswerIndex: 2,
+    explanation: "La paille isole moins bien par cm que le polystyrène, il faut donc environ le double d'épaisseur."
+  },
+  {
+    id: 56,
+    question: "Quel matériau est considéré comme le solide le plus léger du monde et un isolant extrêmement performant ?",
+    options: ["Le béton cellulaire.", "L'Aérogel.", "La laine de roche.", "Le verre cellulaire."],
+    correctAnswerIndex: 1,
+    explanation: "L'Aérogel est composé à 99.8% d'air, ce qui le rend ultra-léger et isolant."
+  },
+  {
+    id: 57,
+    question: "Quelle est la caractéristique du Panneau Isolant Sous Vide (VIP) ?",
+    options: ["Très fin (ex: 35mm) pour une très haute performance, mais fragile au percement.", "Très épais et très lourd.", "Liquide à la pose.", "Fabriqué à base de plumes de canard."],
+    correctAnswerIndex: 0,
+    explanation: "Le vide est le meilleur isolant, permettant une extrême finesse, mais si on perce le panneau, il perd ses propriétés."
+  },
+  {
+    id: 58,
+    question: "La brique 'Monomur' et le béton cellulaire font partie de quelle technique ?",
+    options: ["Isolation par l'intérieur (doublage).", "Isolation répartie (le mur porteur est lui-même isolant).", "Isolation par l'extérieur sous enduit.", "Isolation des combles perdus."],
+    correctAnswerIndex: 1,
+    explanation: "Ces matériaux porteurs sont suffisamment isolants pour ne pas nécessiter d'isolation rapportée supplémentaire."
+  },
+  {
+    id: 59,
+    question: "Le Polystyrène Extrudé (XPS) et le Polystyrène Expansé (EPS) sont des isolants de quelle famille ?",
+    options: ["Minérale.", "Bio-sourcée.", "Synthétique (Pétrochimique).", "Animale."],
+    correctAnswerIndex: 2,
+    explanation: "Ce sont des plastiques dérivés du pétrole."
+  },
+  {
+    id: 60,
+    question: "Le béton de chanvre est généralement un mélange de chènevotte (chanvre) et de quel liant ?",
+    options: ["De ciment pur.", "De chaux (et eau).", "De colle à bois.", "De goudron."],
+    correctAnswerIndex: 1,
+    explanation: "Le mélange Chanvre + Chaux crée un béton léger, isolant et respirant."
+  }
+];
+
 // Helper to get all questions combined
-export const ALL_QUESTIONS = [...QUIZ_1, ...QUIZ_2];
+export const ALL_QUESTIONS = [...QUIZ_1, ...QUIZ_2, ...QUIZ_3];

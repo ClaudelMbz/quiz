@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { QUIZ_1, QUIZ_2, ALL_QUESTIONS } from './constants';
+import { QUIZ_1, QUIZ_2, QUIZ_3, ALL_QUESTIONS } from './constants';
 import { QuizState, Question } from './types';
 import QuizStart from './components/QuizStart';
 import QuestionCard from './components/QuestionCard';
@@ -26,7 +26,7 @@ const App: React.FC = () => {
     setDarkMode(!darkMode);
   };
 
-  const handleStart = (mode: 'quiz1' | 'quiz2' | 'all') => {
+  const handleStart = (mode: 'quiz1' | 'quiz2' | 'quiz3' | 'all') => {
     let selectedQuestions: Question[] = [];
     
     switch (mode) {
@@ -35,6 +35,9 @@ const App: React.FC = () => {
         break;
       case 'quiz2':
         selectedQuestions = QUIZ_2;
+        break;
+      case 'quiz3':
+        selectedQuestions = QUIZ_3;
         break;
       case 'all':
         selectedQuestions = ALL_QUESTIONS;
