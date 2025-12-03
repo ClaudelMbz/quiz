@@ -1,14 +1,15 @@
 import React, { useState, useEffect } from 'react';
-import { QUESTIONS } from './constants';
-import { QuizState } from './types';
+import { QUIZ_1, QUIZ_2, ALL_QUESTIONS } from './constants';
+import { QuizState, Question } from './types';
 import QuizStart from './components/QuizStart';
 import QuestionCard from './components/QuestionCard';
 import QuizSummary from './components/QuizSummary';
 
 const App: React.FC = () => {
   const [quizState, setQuizState] = useState<QuizState>(QuizState.INTRO);
+  const [activeQuestions, setActiveQuestions] = useState<Question[]>([]);
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
-  const [userAnswers, setUserAnswers] = useState<(number | null)[]>(new Array(QUESTIONS.length).fill(null));
+  const [userAnswers, setUserAnswers] = useState<(number | null)[]>([]);
   const [score, setScore] = useState(0);
   const [darkMode, setDarkMode] = useState(true);
 
@@ -25,11 +26,34 @@ const App: React.FC = () => {
     setDarkMode(!darkMode);
   };
 
-  const handleStart = () => {
-    setQuizState(QuizState.PLAYING);
-    setCurrentQuestionIndex(0);
+  const handleStart = (mode: 'quiz1' | 'quiz2' | 'all') => {
+    let selectedQuestions: Question[] = [];
+    
+    switch (mode) {
+      case 'quiz1':
+        selectedQuestions = QUIZ_1;
+        break;
+      case 'quiz2':
+        selectedQuestions = QUIZ_2;
+        break;
+      case 'all':
+        selectedQuestions = ALL_QUESTIONS;
+        break;
+      default:
+        selectedQuestions = QUIZ_1;
+    }
+
+    setActiveQuestions(selectedQuestions);
     setScore(0);
-    setUserAnswers(new Array(QUESTIONS.length).fill(null));
+    setCurrentQuestionIndex(0);
+    setUserAnswers(new Array(selectedQuestions.length).fill(null));
+    setQuizState(QuizState.PLAYING);
+    window.scrollTo(0, 0);
+  };
+
+  const handleRestart = () => {
+    setQuizState(QuizState.INTRO);
+    window.scrollTo(0, 0);
   };
 
   const handleOptionSelect = (optionIndex: number) => {
@@ -37,13 +61,13 @@ const App: React.FC = () => {
     newAnswers[currentQuestionIndex] = optionIndex;
     setUserAnswers(newAnswers);
 
-    if (optionIndex === QUESTIONS[currentQuestionIndex].correctAnswerIndex) {
+    if (optionIndex === activeQuestions[currentQuestionIndex].correctAnswerIndex) {
       setScore(prev => prev + 1);
     }
   };
 
   const handleNextQuestion = () => {
-    if (currentQuestionIndex < QUESTIONS.length - 1) {
+    if (currentQuestionIndex < activeQuestions.length - 1) {
       setCurrentQuestionIndex(prev => prev + 1);
       // Automatically scroll to top for mobile users
       window.scrollTo(0, 0);
@@ -57,7 +81,7 @@ const App: React.FC = () => {
     <div className="min-h-screen bg-slate-100 dark:bg-slate-950 flex flex-col font-sans transition-colors duration-200">
       <header className="bg-white dark:bg-slate-900 shadow-sm border-b dark:border-slate-800 sticky top-0 z-10 transition-colors duration-200">
         <div className="max-w-4xl mx-auto px-4 py-4 flex justify-between items-center">
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-2 cursor-pointer" onClick={handleRestart}>
             <span className="text-2xl">🏠</span>
             <span className="font-bold text-slate-800 dark:text-white text-lg hidden sm:block">Le Quiz Isolation</span>
           </div>
@@ -88,15 +112,14 @@ const App: React.FC = () => {
         {quizState === QuizState.INTRO && (
           <QuizStart 
             onStart={handleStart} 
-            totalQuestions={QUESTIONS.length} 
           />
         )}
 
-        {quizState === QuizState.PLAYING && (
+        {quizState === QuizState.PLAYING && activeQuestions.length > 0 && (
           <QuestionCard
-            question={QUESTIONS[currentQuestionIndex]}
+            question={activeQuestions[currentQuestionIndex]}
             currentQuestionIndex={currentQuestionIndex}
-            totalQuestions={QUESTIONS.length}
+            totalQuestions={activeQuestions.length}
             selectedOptionIndex={userAnswers[currentQuestionIndex]}
             onOptionSelect={handleOptionSelect}
             onNext={handleNextQuestion}
@@ -106,10 +129,10 @@ const App: React.FC = () => {
         {quizState === QuizState.FINISHED && (
           <QuizSummary
             score={score}
-            totalQuestions={QUESTIONS.length}
+            totalQuestions={activeQuestions.length}
             userAnswers={userAnswers}
-            questions={QUESTIONS}
-            onRestart={handleStart}
+            questions={activeQuestions}
+            onRestart={handleRestart}
           />
         )}
       </main>

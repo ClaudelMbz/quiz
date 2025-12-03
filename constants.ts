@@ -1,6 +1,6 @@
 import { Question } from './types';
 
-export const QUESTIONS: Question[] = [
+export const QUIZ_1: Question[] = [
   {
     id: 1,
     question: "Quelle est la conductivité thermique de l'air immobile ?",
@@ -142,3 +142,149 @@ export const QUESTIONS: Question[] = [
     explanation: "L'aérogel est cité comme l'un des matériaux solides les plus légers."
   }
 ];
+
+export const QUIZ_2: Question[] = [
+  {
+    id: 21,
+    question: "Que représente le coefficient U (ou K) mentionné dans les critères de qualité ?",
+    options: ["La résistance thermique", "La transmission thermique (inverse de la résistance)", "L'épaisseur de l'isolant", "La densité de l'isolant"],
+    correctAnswerIndex: 1,
+    explanation: "Plus U est bas, meilleure est l'isolation. C'est l'inverse de la résistance R."
+  },
+  {
+    id: 22,
+    question: "Quel pourcentage du volume d'un bloc de béton cellulaire est occupé par de l'air ?",
+    options: ["20%", "50%", "80%", "99%"],
+    correctAnswerIndex: 2,
+    explanation: "L'air inerte occupe 80% du volume d'un bloc de béton cellulaire, contre 20% pour la matière solide."
+  },
+  {
+    id: 23,
+    question: "Quelle est la matière première utilisée pour fabriquer la laine de roche (Rockwool) ?",
+    options: ["Le sable uniquement", "Le basalte (roche volcanique noire) ou le laitier de haut fourneau", "Le verre recyclé", "La fibre de coco"],
+    correctAnswerIndex: 1,
+    explanation: "Elle est produite par la fusion du basalte ou de laitier de haut fourneau."
+  },
+  {
+    id: 24,
+    question: "Quel liant (colle) est souvent utilisé pour assembler les fibres de la laine de lin ?",
+    options: ["L'amidon", "Le polyester", "Le bitume", "La chaux"],
+    correctAnswerIndex: 1,
+    explanation: "Les fibres de lin sont assemblées et thermoliées dans la plupart des cas avec du polyester."
+  },
+  {
+    id: 25,
+    question: "Quelle controverse spécifique concerne la Vermiculite ?",
+    options: ["Elle attire les termites", "Elle peut contenir de l'amiante (risque de cancer)", "Elle fond au soleil", "Elle est radioactive"],
+    correctAnswerIndex: 1,
+    explanation: "Il y a un risque historique que la vermiculite contienne des traces d'amiante, ce qui est dangereux pour la santé."
+  },
+  {
+    id: 26,
+    question: "À quelle température la roche siliceuse est-elle chauffée pour obtenir de la Perlite expansée ?",
+    options: ["100°C", "300°C", "Près de 1200°C", "2000°C"],
+    correctAnswerIndex: 2,
+    explanation: "La perlite est chauffée à près de 1200°C pour s'expanser et devenir isolante."
+  },
+  {
+    id: 27,
+    question: "Quel est l'inconvénient acoustique mentionné pour la brique 'Monomur' ?",
+    options: ["Elle laisse passer les voix", "Problèmes de résonance et 'clic' au niveau des interrupteurs", "Elle absorbe trop les sons", "Elle vibre avec le vent"],
+    correctAnswerIndex: 1,
+    explanation: "Des problèmes de résonance acoustique et de bruits au niveau des boîtiers électriques sont parfois constatés."
+  },
+  {
+    id: 28,
+    question: "Quelle substance naturelle permet d'agglomérer les granulés de liège expansé (Cork) ?",
+    options: ["La colle vinylique", "La subérine (sa propre résine)", "Le latex", "La cire d'abeille"],
+    correctAnswerIndex: 1,
+    explanation: "Les granulés s'agglomèrent sous l'action naturelle de leur résine, la subérine, lorsqu'ils sont chauffés."
+  },
+  {
+    id: 29,
+    question: "Avec quel matériau l'Aérogel est-il parfois combiné pour devenir un isolant 'exceptionnel' ?",
+    options: ["La laine de roche", "Le polystyrène", "La paille", "Le béton"],
+    correctAnswerIndex: 0,
+    explanation: "L'aérogel combiné à la laine de roche (comme dans l'Aerowool) offre des performances exceptionnelles."
+  },
+  {
+    id: 30,
+    question: "De quoi est composé le 'Wood composite' (tendance récente pour les murs extérieurs) ?",
+    options: ["De bois et de pierre", "De bois et de PVC", "De bois et de paille", "De bois et d'aluminium"],
+    correctAnswerIndex: 1,
+    explanation: "C'est un matériau composite qui combine la chaleur du bois avec la résistance du PVC."
+  },
+  {
+    id: 31,
+    question: "Quel est l'inconvénient principal des briques cuites (Fired Bricks) par rapport à l'humidité ?",
+    options: ["Elles fondent à l'eau", "Elles sont imperméables à l'humidité et ne laissent pas respirer le mur", "Elles absorbent toute l'eau comme une éponge", "Elles moisissent"],
+    correctAnswerIndex: 1,
+    explanation: "Elles sont souvent trop imperméables, empêchant le mur de respirer correctement."
+  },
+  {
+    id: 32,
+    question: "Quelle est la valeur approximative de l'énergie grise du Polyuréthane ?",
+    options: ["50 kWh/m3", "450 kWh/m3", "974 kWh/m3", "10 kWh/m3"],
+    correctAnswerIndex: 2,
+    explanation: "Son énergie grise est très élevée, citée à environ 974 kWh/m3, ce qui est mauvais pour l'environnement."
+  },
+  {
+    id: 33,
+    question: "Quel symbole grec représente la résistance à la diffusion de la vapeur d'eau ?",
+    options: ["λ (Lambda)", "μ (Mu)", "Ω (Omega)", "π (Pi)"],
+    correctAnswerIndex: 1,
+    explanation: "Le coefficient μ (Mu) indique la résistance d'un matériau à laisser passer la vapeur d'eau."
+  },
+  {
+    id: 34,
+    question: "Quel est un exemple de 'pont thermique géométrique' ?",
+    options: ["Une fenêtre à double vitrage", "Un angle de mur extérieur", "Une porte en bois", "Un tapis"],
+    correctAnswerIndex: 1,
+    explanation: "L'angle d'un mur extérieur est un exemple classique où la surface de déperdition est plus grande que la surface intérieure."
+  },
+  {
+    id: 35,
+    question: "Avec quoi mélange-t-on le chanvre pour fabriquer des briques de chanvre ?",
+    options: ["Du plâtre", "De la chaux et de l'eau", "Du ciment pur", "De la résine époxy"],
+    correctAnswerIndex: 1,
+    explanation: "Le granulat de chanvre est mélangé le plus souvent avec de la chaux et de l'eau pour former des briques."
+  },
+  {
+    id: 36,
+    question: "Pourquoi la fibre de coco a-t-elle un impact environnemental négatif malgré son origine naturelle ?",
+    options: ["Elle nécessite beaucoup d'eau", "Elle nécessite d'être importée (transport CO2)", "Elle est toxique pour les poissons", "Elle est non recyclable"],
+    correctAnswerIndex: 1,
+    explanation: "Le transport sur de longues distances (importation) augmente considérablement son bilan carbone."
+  },
+  {
+    id: 37,
+    question: "Quel problème peut survenir avec la laine de verre et la ouate de cellulose au fil du temps ?",
+    options: ["Elles deviennent radioactives", "Elles sont sujettes au tassement (settling)", "Elles s'évaporent", "Elles deviennent conductrices d'électricité"],
+    correctAnswerIndex: 1,
+    explanation: "Elles ont tendance à se tasser avec le temps, ce qui peut réduire leur performance isolante en haut des murs."
+  },
+  {
+    id: 38,
+    question: "Quel équipement de protection est recommandé pour poser de la laine de mouton ?",
+    options: ["Des lunettes de soleil", "Un masque et des gants", "Des bouchons d'oreilles", "Une combinaison de plongée"],
+    correctAnswerIndex: 1,
+    explanation: "Bien que naturelle, elle peut contenir des produits de traitement, il est donc conseillé de porter masque et gants."
+  },
+  {
+    id: 39,
+    question: "Quelle est la technique d'isolation qui implique une 'contre-cloison' (lining wall) ?",
+    options: ["L'Isolation Thermique par l'Extérieur (ITE)", "L'Isolation Thermique par l'Intérieur (ITI)", "L'isolation des combles perdus", "L'isolation sous vide"],
+    correctAnswerIndex: 1,
+    explanation: "L'ITI (Isolation par l'Intérieur) nécessite souvent la création d'une contre-cloison pour masquer l'isolant."
+  },
+  {
+    id: 40,
+    question: "Quel est un avantage financier indirect de l'isolation mentionné dans l'introduction ?",
+    options: ["Elle est remboursée par la mairie", "Elle augmente la valeur du bâtiment", "Elle permet de vendre de l'électricité", "Elle est gratuite"],
+    correctAnswerIndex: 1,
+    explanation: "Une bonne isolation augmente la valeur patrimoniale (immobilière) du bâtiment."
+  }
+];
+
+// Helper to get all questions combined
+export const ALL_QUESTIONS = [...QUIZ_1, ...QUIZ_2];
