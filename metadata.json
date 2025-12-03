@@ -1,5 +1,5 @@
 {
-  "name": "Le Quiz Isolation Thermique",
-  "description": "Un quiz interactif de 20 questions sur l'isolation thermique, les matériaux et les techniques de construction.",
+  "name": "Thermal Insulation Quiz",
+  "description": "An interactive 20-question quiz about thermal insulation, materials, and construction techniques.",
   "requestFramePermissions": []
 }

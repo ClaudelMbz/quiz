@@ -7,5 +7,5 @@ export default defineConfig({
   // IMPORTANT: Remplace 'nom-de-ton-repo' par le nom de ton dépôt GitHub
   // Exemple: si ton repo est https://github.com/monpseudo/quiz-isolation
   // alors mets: base: '/quiz-isolation/',
-  base: '/quiz/', 
+  base: '/nom-de-ton-repo/', 
 })

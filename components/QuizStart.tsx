@@ -13,11 +13,11 @@ const QuizStart: React.FC<QuizStartProps> = ({ onStart }) => {
         </div>
         
         <h1 className="text-3xl font-bold text-slate-800 dark:text-white mb-4">
-          Quiz Isolation Thermique
+          Thermal Insulation Quiz
         </h1>
         
         <p className="text-slate-600 dark:text-slate-300 mb-8 text-lg max-w-2xl mx-auto">
-          Testez vos connaissances sur la conductivité thermique, les matériaux isolants, les ponts thermiques et les techniques de construction durable.
+          Test your knowledge on thermal conductivity, insulating materials, thermal bridges, and sustainable construction techniques.
         </p>
         
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-4">
@@ -25,11 +25,11 @@ const QuizStart: React.FC<QuizStartProps> = ({ onStart }) => {
           <div className="bg-slate-50 dark:bg-slate-700/50 p-6 rounded-xl border border-slate-100 dark:border-slate-600 flex flex-col justify-between hover:border-blue-400 dark:hover:border-blue-500 transition-all group cursor-pointer" onClick={() => onStart('quiz1')}>
              <div>
                <div className="text-2xl mb-2">🏠</div>
-               <h3 className="font-bold text-lg text-slate-800 dark:text-white mb-2">Série 1 : Bases</h3>
-               <p className="text-sm text-slate-500 dark:text-slate-400 mb-4">Conductivité, R, principes de base et matériaux courants.</p>
+               <h3 className="font-bold text-lg text-slate-800 dark:text-white mb-2">Series 1: Basics</h3>
+               <p className="text-sm text-slate-500 dark:text-slate-400 mb-4">Conductivity, R-value, basic principles, and common materials.</p>
              </div>
              <button className="w-full py-2 bg-white dark:bg-slate-800 text-blue-600 dark:text-blue-400 font-bold rounded-lg border border-slate-200 dark:border-slate-600 group-hover:bg-blue-600 group-hover:text-white dark:group-hover:bg-blue-500 dark:group-hover:text-white transition-colors">
-               Lancer (20 Q)
+               Start (20 Q)
              </button>
           </div>
 
@@ -37,11 +37,11 @@ const QuizStart: React.FC<QuizStartProps> = ({ onStart }) => {
           <div className="bg-slate-50 dark:bg-slate-700/50 p-6 rounded-xl border border-slate-100 dark:border-slate-600 flex flex-col justify-between hover:border-purple-400 dark:hover:border-purple-500 transition-all group cursor-pointer" onClick={() => onStart('quiz2')}>
              <div>
                <div className="text-2xl mb-2">🔬</div>
-               <h3 className="font-bold text-lg text-slate-800 dark:text-white mb-2">Série 2 : Techniques</h3>
-               <p className="text-sm text-slate-500 dark:text-slate-400 mb-4">Énergie grise, détails chimiques, acoustique et controverses.</p>
+               <h3 className="font-bold text-lg text-slate-800 dark:text-white mb-2">Series 2: Technical</h3>
+               <p className="text-sm text-slate-500 dark:text-slate-400 mb-4">Embodied energy, chemical details, acoustics, and controversies.</p>
              </div>
              <button className="w-full py-2 bg-white dark:bg-slate-800 text-purple-600 dark:text-purple-400 font-bold rounded-lg border border-slate-200 dark:border-slate-600 group-hover:bg-purple-600 group-hover:text-white dark:group-hover:bg-purple-500 dark:group-hover:text-white transition-colors">
-               Lancer (20 Q)
+               Start (20 Q)
              </button>
           </div>
 
@@ -49,11 +49,11 @@ const QuizStart: React.FC<QuizStartProps> = ({ onStart }) => {
            <div className="bg-slate-50 dark:bg-slate-700/50 p-6 rounded-xl border border-slate-100 dark:border-slate-600 flex flex-col justify-between hover:border-teal-400 dark:hover:border-teal-500 transition-all group cursor-pointer" onClick={() => onStart('quiz3')}>
              <div>
                <div className="text-2xl mb-2">♻️</div>
-               <h3 className="font-bold text-lg text-slate-800 dark:text-white mb-2">Série 3 : Synthèse</h3>
-               <p className="text-sm text-slate-500 dark:text-slate-400 mb-4">Critères environnementaux, recyclage et identification.</p>
+               <h3 className="font-bold text-lg text-slate-800 dark:text-white mb-2">Series 3: Synthesis</h3>
+               <p className="text-sm text-slate-500 dark:text-slate-400 mb-4">Environmental criteria, recycling, and identification.</p>
              </div>
              <button className="w-full py-2 bg-white dark:bg-slate-800 text-teal-600 dark:text-teal-400 font-bold rounded-lg border border-slate-200 dark:border-slate-600 group-hover:bg-teal-600 group-hover:text-white dark:group-hover:bg-teal-500 dark:group-hover:text-white transition-colors">
-               Lancer (20 Q)
+               Start (20 Q)
              </button>
           </div>
 
@@ -61,11 +61,11 @@ const QuizStart: React.FC<QuizStartProps> = ({ onStart }) => {
           <div className="bg-slate-50 dark:bg-slate-700/50 p-6 rounded-xl border border-slate-100 dark:border-slate-600 flex flex-col justify-between hover:border-green-400 dark:hover:border-green-500 transition-all group cursor-pointer" onClick={() => onStart('all')}>
              <div>
                <div className="text-2xl mb-2">🎓</div>
-               <h3 className="font-bold text-lg text-slate-800 dark:text-white mb-2">Grand Chelem</h3>
-               <p className="text-sm text-slate-500 dark:text-slate-400 mb-4">L'ensemble des 60 questions pour une révision totale.</p>
+               <h3 className="font-bold text-lg text-slate-800 dark:text-white mb-2">Grand Slam</h3>
+               <p className="text-sm text-slate-500 dark:text-slate-400 mb-4">All 60 questions for a total review.</p>
              </div>
              <button className="w-full py-2 bg-white dark:bg-slate-800 text-green-600 dark:text-green-400 font-bold rounded-lg border border-slate-200 dark:border-slate-600 group-hover:bg-green-600 group-hover:text-white dark:group-hover:bg-green-500 dark:group-hover:text-white transition-colors">
-               Lancer (60 Q)
+               Start (60 Q)
              </button>
           </div>
         </div>

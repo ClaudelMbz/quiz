@@ -3,429 +3,429 @@ import { Question } from './types';
 export const QUIZ_1: Question[] = [
   {
     id: 1,
-    question: "Quelle est la conductivité thermique de l'air immobile ?",
+    question: "What is the thermal conductivity of still air?",
     options: ["1.5 W/m².K", "0.0262 W/m².K", "0.50 W/m².K", "0.001 W/m².K"],
     correctAnswerIndex: 1,
-    explanation: "La conductivité de l'air est très faible (0.0262 W/m².K) à condition qu'il soit immobile."
+    explanation: "The conductivity of air is very low (0.0262 W/m².K) provided it is perfectly still."
   },
   {
     id: 2,
-    question: "Quelle est la formule pour calculer la résistance thermique (R) ?",
+    question: "What is the formula to calculate thermal resistance (R)?",
     options: ["R = λ / e", "R = e × λ", "R = e / λ", "R = 1 / λ"],
     correctAnswerIndex: 2,
-    explanation: "La résistance thermique est calculée par l'épaisseur (e) divisée par la conductivité thermique (λ)."
+    explanation: "Thermal resistance is calculated by dividing thickness (e) by thermal conductivity (λ)."
   },
   {
     id: 3,
-    question: "Quel est le principe fondamental d'un bon isolant thermique ?",
-    options: ["Être le plus dense possible", "Emprisonner un maximum d'air immobile dans de petites cellules", "Contenir des particules métalliques", "Faciliter la circulation de l'air"],
+    question: "What is the fundamental principle of a good thermal insulator?",
+    options: ["Be as dense as possible", "Trap maximum still air in small cells", "Contain metallic particles", "Facilitate air circulation"],
     correctAnswerIndex: 1,
-    explanation: "La technique principale est de piéger autant d'air que possible, car l'air immobile est le 'pire conducteur' (donc un excellent isolant)."
+    explanation: "The main technique is to trap as much air as possible, because still air is the 'worst conductor' (thus an excellent insulator)."
   },
   {
     id: 4,
-    question: "Qu'est-ce qu'un 'pont thermique' ?",
-    options: ["Un système de chauffage par le sol", "Une passerelle entre deux bâtiments", "Un élément localisé de l'enveloppe où la conductivité est plus élevée", "Un type d'isolant synthétique"],
+    question: "What is a 'thermal bridge'?",
+    options: ["A floor heating system", "A walkway between two buildings", "A localized element of the envelope where conductivity is higher", "A type of synthetic insulation"],
     correctAnswerIndex: 2,
-    explanation: "C'est un élément localisé (comme un angle de mur ou une jonction) qui a une conductivité plus élevée que la zone adjacente (fuite de chaleur)."
+    explanation: "It is a localized element (like a wall corner or junction) that has higher conductivity than the adjacent area (heat leak)."
   },
   {
     id: 5,
-    question: "Quel est l'avantage principal de l'Isolation Thermique par l'Extérieur (ITE) ?",
-    options: ["Elle est moins chère que l'isolation intérieure", "Elle élimine la majorité des ponts thermiques sans réduire la surface habitable", "Elle ne nécessite aucune autorisation administrative", "Elle utilise uniquement de la paille"],
+    question: "What is the main advantage of External Thermal Insulation (ETI)?",
+    options: ["It is cheaper than internal insulation", "It eliminates most thermal bridges without reducing living space", "It requires no administrative permits", "It uses only straw"],
     correctAnswerIndex: 1,
-    explanation: "L'ITE permet d'éliminer la grande majorité des ponts thermiques sans réduire la surface habitable."
+    explanation: "ETI allows for the elimination of the vast majority of thermal bridges without reducing the interior living space."
   },
   {
     id: 6,
-    question: "Quel est un inconvénient majeur des isolants synthétiques (polystyrène, polyuréthane) en cas d'incendie ?",
-    options: ["Ils s'éteignent trop vite", "Ils dégagent des vapeurs toxiques mortelles", "Ils deviennent froids", "Ils se transforment en pierre"],
+    question: "What is a major disadvantage of synthetic insulators (polystyrene, polyurethane) in case of fire?",
+    options: ["They extinguish too quickly", "They release deadly toxic fumes", "They become cold", "They turn into stone"],
     correctAnswerIndex: 1,
-    explanation: "Les vapeurs libérées par ces matériaux en cas de feu sont souvent fatales."
+    explanation: "The vapors released by these materials during a fire are often fatal."
   },
   {
     id: 7,
-    question: "Quelle est la particularité des isolants bio-sourcés concernant le confort d'été ?",
-    options: ["Ils sont très légers et chauffent vite", "Ils sont généralement denses et offrent un bon déphasage thermique", "Ils n'ont aucun impact sur le confort d'été", "Ils refroidissent la maison activement"],
+    question: "What is the particularity of bio-sourced insulators regarding summer comfort?",
+    options: ["They are very light and heat up quickly", "They are generally dense and offer good thermal phase shift", "They have no impact on summer comfort", "They actively cool the house"],
     correctAnswerIndex: 1,
-    explanation: "Leur bonne densité permet un bon déphasage, ce qui est idéal pour le confort d'été (éviter la surchauffe)."
+    explanation: "Their good density allows for a good phase shift (time lag), which is ideal for summer comfort (preventing overheating)."
   },
   {
     id: 8,
-    question: "De quelle matière première est issue la ouate de cellulose ?",
-    options: ["De la laine de mouton", "De papier recyclé", "De roches volcaniques", "De bouteilles en plastique"],
+    question: "From which raw material is cellulose insulation derived?",
+    options: ["From sheep's wool", "From recycled paper", "From volcanic rocks", "From plastic bottles"],
     correctAnswerIndex: 1,
-    explanation: "Elle est obtenue à partir de papier recyclé traité."
+    explanation: "It is obtained from treated recycled paper."
   },
   {
     id: 9,
-    question: "Quel isolant est parfois qualifié de 'meilleur isolant thermique' grâce à sa très faible conductivité (λ entre 0.022 et 0.028) ?",
-    options: ["La laine de verre", "Le liège", "Le polyuréthane", "La paille"],
+    question: "Which insulator is sometimes described as the 'best thermal insulator' due to its very low conductivity (λ between 0.022 and 0.028)?",
+    options: ["Glass wool", "Cork", "Polyurethane", "Straw"],
     correctAnswerIndex: 2,
-    explanation: "Le polyuréthane a un pouvoir isolant très élevé avec une conductivité de 0.022 à 0.028 W/m.K."
+    explanation: "Polyurethane has a very high insulating power with a conductivity of 0.022 to 0.028 W/m.K."
   },
   {
     id: 10,
-    question: "Pourquoi la production de liège (cork) est-elle limitée ?",
-    options: ["Car les arbres meurent après la récolte", "Car il faut attendre 8 à 10 ans entre chaque récolte d'écorce", "Car il ne pousse qu'en Antarctique", "Car il est toxique à l'état brut"],
+    question: "Why is cork production limited?",
+    options: ["Because trees die after harvest", "Because one must wait 8 to 10 years between each bark harvest", "Because it only grows in Antarctica", "Because it is toxic in its raw state"],
     correctAnswerIndex: 1,
-    explanation: "Le chêne-liège met environ 10 ans à reconstituer son écorce après une récolte."
+    explanation: "The cork oak takes about 10 years to regenerate its bark after a harvest."
   },
   {
     id: 11,
-    question: "Quel ingrédient permet au béton cellulaire de créer ses bulles d'air ?",
-    options: ["La poudre d'aluminium", "La levure de boulanger", "Le gaz carbonique", "Des billes de polystyrène"],
+    question: "What ingredient allows aerated concrete (AAC) to create its air bubbles?",
+    options: ["Aluminum powder", "Baker's yeast", "Carbon dioxide", "Polystyrene beads"],
     correctAnswerIndex: 0,
-    explanation: "Le mélange gonfle sous l'effet de la poudre d'aluminium (0.6%) qui crée de nombreuses cellules d'air."
+    explanation: "The mixture swells under the effect of aluminum powder (0.6%) which creates numerous air cells."
   },
   {
     id: 12,
-    question: "Quel est l'avantage de la brique 'Monomur' ?",
-    options: ["Elle est transparente", "Elle sert à la fois de matériau de construction (porteur) et d'isolant", "Elle est l'isolant le moins cher du marché", "Elle est faite en bois"],
+    question: "What is the advantage of the 'Monomur' (Monolithic) brick?",
+    options: ["It is transparent", "It serves as both a structural material and insulation", "It is the cheapest insulator on the market", "It is made of wood"],
     correctAnswerIndex: 1,
-    explanation: "Elle permet de construire le mur et d'isoler en même temps, éliminant le besoin d'ajouter un panneau isolant."
+    explanation: "It allows building the wall and insulating at the same time, eliminating the need to add an insulating panel."
   },
   {
     id: 13,
-    question: "Quelle épaisseur fait le panneau isolant sous vide (VIP) mentionné dans les dernières tendances ?",
+    question: "How thick is the Vacuum Insulation Panel (VIP) mentioned in recent trends?",
     options: ["100 mm", "35 mm", "10 mm", "50 cm"],
     correctAnswerIndex: 1,
-    explanation: "Le VIP a d'excellentes propriétés isolantes pour seulement 35 mm d'épaisseur."
+    explanation: "The VIP has excellent insulating properties for only 35 mm of thickness."
   },
   {
     id: 14,
-    question: "Quelle est l'équivalence d'isolation de la paille par rapport au polystyrène ?",
-    options: ["10 cm de paille = 10 cm de polystyrène", "40 cm de paille = 20 cm de polystyrène", "La paille n'isole pas", "20 cm de paille = 40 cm de polystyrène"],
+    question: "What is the insulation equivalence of straw compared to polystyrene?",
+    options: ["10 cm of straw = 10 cm of polystyrene", "40 cm of straw = 20 cm of polystyrene", "Straw does not insulate", "20 cm of straw = 40 cm of polystyrene"],
     correctAnswerIndex: 1,
-    explanation: "40 cm de paille isolent aussi bien que 20 cm de polystyrène."
+    explanation: "40 cm of straw insulates as well as 20 cm of polystyrene."
   },
   {
     id: 15,
-    question: "Quel est un inconvénient de la laine de verre lors de la pose ?",
-    options: ["Elle est très lourde", "Elle peut provoquer des irritations de la peau", "Elle dégage une odeur de soufre", "Elle est liquide"],
+    question: "What is a disadvantage of glass wool during installation?",
+    options: ["It is very heavy", "It can cause skin irritation", "It smells like sulfur", "It is liquid"],
     correctAnswerIndex: 1,
-    explanation: "Elle peut causer des irritations cutanées lors de la manipulation."
+    explanation: "It can cause skin irritation during handling due to fibers."
   },
   {
     id: 16,
-    question: "D'où provient le polystyrène extrudé ?",
-    options: ["De l'industrie pétrochimique", "Du recyclage du verre", "De la culture du chanvre", "De la roche volcanique"],
+    question: "Where does extruded polystyrene come from?",
+    options: ["From the petrochemical industry", "From glass recycling", "From hemp cultivation", "From volcanic rock"],
     correctAnswerIndex: 0,
-    explanation: "C'est un matériau isolant produit par l'industrie pétrochimique."
+    explanation: "It is an insulating material produced by the petrochemical industry."
   },
   {
     id: 17,
-    question: "Quel liant naturel est préférable au polyuréthane pour la laine de chanvre ?",
-    options: ["Le ciment", "L'amidon", "La colle à bois", "Le goudron"],
+    question: "Which natural binder is preferable to polyurethane for hemp wool?",
+    options: ["Cement", "Starch", "Wood glue", "Tar"],
     correctAnswerIndex: 1,
-    explanation: "Il est conseillé de préférer les produits liés avec de l'amidon naturel plutôt que du polyuréthane."
+    explanation: "It is advised to prefer products bound with natural starch rather than polyurethane."
   },
   {
     id: 18,
-    question: "Quelle est l'origine de la Perlite et de la Vermiculite ?",
-    options: ["Ce sont des roches volcaniques expansées", "Ce sont des plastiques recyclés", "Ce sont des résidus de bois", "Ce sont des produits animaux"],
+    question: "What is the origin of Perlite and Vermiculite?",
+    options: ["They are expanded volcanic rocks", "They are recycled plastics", "They are wood residues", "They are animal products"],
     correctAnswerIndex: 0,
-    explanation: "La perlite et la vermiculite sont des roches chauffées pour augmenter leur volume."
+    explanation: "Perlite and vermiculite are rocks heated to increase their volume."
   },
   {
     id: 19,
-    question: "Quel est un point faible de la laine de mouton ?",
-    options: ["Elle brûle très facilement", "Elle a une faible inertie (moins de confort en été)", "Elle est très lourde", "Elle n'est pas recyclable"],
+    question: "What is a weak point of sheep's wool?",
+    options: ["It burns very easily", "It has low thermal inertia (less comfort in summer)", "It is very heavy", "It is not recyclable"],
     correctAnswerIndex: 1,
-    explanation: "Elle a une faible inertie, ce qui offre moins de confort en été."
+    explanation: "It has low inertia, which offers less comfort in summer."
   },
   {
     id: 20,
-    question: "Quel matériau est décrit comme 'l'un des matériaux solides les plus légers du marché' ?",
-    options: ["Le béton cellulaire", "L'Aérogel", "La brique de chanvre", "Le verre cellulaire"],
+    question: "Which material is described as 'one of the lightest solid materials on the market'?",
+    options: ["Aerated concrete", "Aerogel", "Hemp brick", "Cellular glass"],
     correctAnswerIndex: 1,
-    explanation: "L'aérogel est cité comme l'un des matériaux solides les plus légers."
+    explanation: "Aerogel is cited as one of the lightest solid materials."
   }
 ];
 
 export const QUIZ_2: Question[] = [
   {
     id: 21,
-    question: "Que représente le coefficient U (ou K) mentionné dans les critères de qualité ?",
-    options: ["La résistance thermique", "La transmission thermique (inverse de la résistance)", "L'épaisseur de l'isolant", "La densité de l'isolant"],
+    question: "What does the U-value (or K-value) represent in quality criteria?",
+    options: ["Thermal resistance", "Thermal transmittance (inverse of resistance)", "Insulation thickness", "Insulation density"],
     correctAnswerIndex: 1,
-    explanation: "Plus U est bas, meilleure est l'isolation. C'est l'inverse de la résistance R."
+    explanation: "The lower the U-value, the better the insulation. It is the inverse of resistance R."
   },
   {
     id: 22,
-    question: "Quel pourcentage du volume d'un bloc de béton cellulaire est occupé par de l'air ?",
+    question: "What percentage of the volume of an aerated concrete block is occupied by air?",
     options: ["20%", "50%", "80%", "99%"],
     correctAnswerIndex: 2,
-    explanation: "L'air inerte occupe 80% du volume d'un bloc de béton cellulaire, contre 20% pour la matière solide."
+    explanation: "Inert air occupies 80% of the volume of an aerated concrete block, versus 20% for solid matter."
   },
   {
     id: 23,
-    question: "Quelle est la matière première utilisée pour fabriquer la laine de roche (Rockwool) ?",
-    options: ["Le sable uniquement", "Le basalte (roche volcanique noire) ou le laitier de haut fourneau", "Le verre recyclé", "La fibre de coco"],
+    question: "What raw material is used to manufacture rock wool (Rockwool)?",
+    options: ["Sand only", "Basalt (black volcanic rock) or blast furnace slag", "Recycled glass", "Coconut fiber"],
     correctAnswerIndex: 1,
-    explanation: "Elle est produite par la fusion du basalte ou de laitier de haut fourneau."
+    explanation: "It is produced by melting basalt or blast furnace slag."
   },
   {
     id: 24,
-    question: "Quel liant (colle) est souvent utilisé pour assembler les fibres de la laine de lin ?",
-    options: ["L'amidon", "Le polyester", "Le bitume", "La chaux"],
+    question: "Which binder (glue) is often used to assemble flax fibers?",
+    options: ["Starch", "Polyester", "Bitumen", "Lime"],
     correctAnswerIndex: 1,
-    explanation: "Les fibres de lin sont assemblées et thermoliées dans la plupart des cas avec du polyester."
+    explanation: "Flax fibers are assembled and thermobonded in most cases with polyester."
   },
   {
     id: 25,
-    question: "Quelle controverse spécifique concerne la Vermiculite ?",
-    options: ["Elle attire les termites", "Elle peut contenir de l'amiante (risque de cancer)", "Elle fond au soleil", "Elle est radioactive"],
+    question: "What specific controversy concerns Vermiculite?",
+    options: ["It attracts termites", "It may contain asbestos (cancer risk)", "It melts in the sun", "It is radioactive"],
     correctAnswerIndex: 1,
-    explanation: "Il y a un risque historique que la vermiculite contienne des traces d'amiante, ce qui est dangereux pour la santé."
+    explanation: "There is a historical risk that vermiculite contains traces of asbestos, which is dangerous for health."
   },
   {
     id: 26,
-    question: "À quelle température la roche siliceuse est-elle chauffée pour obtenir de la Perlite expansée ?",
-    options: ["100°C", "300°C", "Près de 1200°C", "2000°C"],
+    question: "At what temperature is siliceous rock heated to obtain expanded Perlite?",
+    options: ["100°C", "300°C", "Nearly 1200°C", "2000°C"],
     correctAnswerIndex: 2,
-    explanation: "La perlite est chauffée à près de 1200°C pour s'expanser et devenir isolante."
+    explanation: "Perlite is heated to nearly 1200°C to expand and become insulating."
   },
   {
     id: 27,
-    question: "Quel est l'inconvénient acoustique mentionné pour la brique 'Monomur' ?",
-    options: ["Elle laisse passer les voix", "Problèmes de résonance et 'clic' au niveau des interrupteurs", "Elle absorbe trop les sons", "Elle vibre avec le vent"],
+    question: "What acoustic disadvantage is mentioned for the 'Monomur' brick?",
+    options: ["It lets voices through", "Resonance problems and 'clicking' at switches", "It absorbs too much sound", "It vibrates with the wind"],
     correctAnswerIndex: 1,
-    explanation: "Des problèmes de résonance acoustique et de bruits au niveau des boîtiers électriques sont parfois constatés."
+    explanation: "Acoustic resonance problems and noise at electrical boxes are sometimes observed."
   },
   {
     id: 28,
-    question: "Quelle substance naturelle permet d'agglomérer les granulés de liège expansé (Cork) ?",
-    options: ["La colle vinylique", "La subérine (sa propre résine)", "Le latex", "La cire d'abeille"],
+    question: "Which natural substance allows expanded cork granules to agglomerate?",
+    options: ["Vinyl glue", "Suberin (its own resin)", "Latex", "Beeswax"],
     correctAnswerIndex: 1,
-    explanation: "Les granulés s'agglomèrent sous l'action naturelle de leur résine, la subérine, lorsqu'ils sont chauffés."
+    explanation: "Granules agglomerate under the natural action of their resin, suberin, when heated."
   },
   {
     id: 29,
-    question: "Avec quel matériau l'Aérogel est-il parfois combiné pour devenir un isolant 'exceptionnel' ?",
-    options: ["La laine de roche", "Le polystyrène", "La paille", "Le béton"],
+    question: "With which material is Aerogel sometimes combined to become an 'exceptional' insulator?",
+    options: ["Rock wool", "Polystyrene", "Straw", "Concrete"],
     correctAnswerIndex: 0,
-    explanation: "L'aérogel combiné à la laine de roche (comme dans l'Aerowool) offre des performances exceptionnelles."
+    explanation: "Aerogel combined with rock wool (as in Aerowool) offers exceptional performance."
   },
   {
     id: 30,
-    question: "De quoi est composé le 'Wood composite' (tendance récente pour les murs extérieurs) ?",
-    options: ["De bois et de pierre", "De bois et de PVC", "De bois et de paille", "De bois et d'aluminium"],
+    question: "What is 'Wood composite' (recent trend for exterior walls) made of?",
+    options: ["Wood and stone", "Wood and PVC", "Wood and straw", "Wood and aluminum"],
     correctAnswerIndex: 1,
-    explanation: "C'est un matériau composite qui combine la chaleur du bois avec la résistance du PVC."
+    explanation: "It is a composite material that combines the warmth of wood with the resistance of PVC."
   },
   {
     id: 31,
-    question: "Quel est l'inconvénient principal des briques cuites (Fired Bricks) par rapport à l'humidité ?",
-    options: ["Elles fondent à l'eau", "Elles sont imperméables à l'humidité et ne laissent pas respirer le mur", "Elles absorbent toute l'eau comme une éponge", "Elles moisissent"],
+    question: "What is the main disadvantage of Fired Bricks regarding moisture?",
+    options: ["They melt in water", "They are impermeable to moisture and don't let the wall breathe", "They absorb all water like a sponge", "They get moldy"],
     correctAnswerIndex: 1,
-    explanation: "Elles sont souvent trop imperméables, empêchant le mur de respirer correctement."
+    explanation: "They are often too impermeable, preventing the wall from breathing properly."
   },
   {
     id: 32,
-    question: "Quelle est la valeur approximative de l'énergie grise du Polyuréthane ?",
+    question: "What is the approximate embodied energy value of Polyurethane?",
     options: ["50 kWh/m3", "450 kWh/m3", "974 kWh/m3", "10 kWh/m3"],
     correctAnswerIndex: 2,
-    explanation: "Son énergie grise est très élevée, citée à environ 974 kWh/m3, ce qui est mauvais pour l'environnement."
+    explanation: "Its embodied energy is very high, cited at about 974 kWh/m3, which is bad for the environment."
   },
   {
     id: 33,
-    question: "Quel symbole grec représente la résistance à la diffusion de la vapeur d'eau ?",
+    question: "Which Greek symbol represents resistance to water vapor diffusion?",
     options: ["λ (Lambda)", "μ (Mu)", "Ω (Omega)", "π (Pi)"],
     correctAnswerIndex: 1,
-    explanation: "Le coefficient μ (Mu) indique la résistance d'un matériau à laisser passer la vapeur d'eau."
+    explanation: "The coefficient μ (Mu) indicates a material's resistance to letting water vapor pass through."
   },
   {
     id: 34,
-    question: "Quel est un exemple de 'pont thermique géométrique' ?",
-    options: ["Une fenêtre à double vitrage", "Un angle de mur extérieur", "Une porte en bois", "Un tapis"],
+    question: "What is an example of a 'geometric thermal bridge'?",
+    options: ["A double-glazed window", "An exterior wall corner", "A wooden door", "A rug"],
     correctAnswerIndex: 1,
-    explanation: "L'angle d'un mur extérieur est un exemple classique où la surface de déperdition est plus grande que la surface intérieure."
+    explanation: "The corner of an exterior wall is a classic example where the heat loss surface area is greater than the internal surface area."
   },
   {
     id: 35,
-    question: "Avec quoi mélange-t-on le chanvre pour fabriquer des briques de chanvre ?",
-    options: ["Du plâtre", "De la chaux et de l'eau", "Du ciment pur", "De la résine époxy"],
+    question: "What is mixed with hemp to make hemp bricks?",
+    options: ["Plaster", "Lime and water", "Pure cement", "Epoxy resin"],
     correctAnswerIndex: 1,
-    explanation: "Le granulat de chanvre est mélangé le plus souvent avec de la chaux et de l'eau pour former des briques."
+    explanation: "Hemp hurds are most often mixed with lime and water to form bricks."
   },
   {
     id: 36,
-    question: "Pourquoi la fibre de coco a-t-elle un impact environnemental négatif malgré son origine naturelle ?",
-    options: ["Elle nécessite beaucoup d'eau", "Elle nécessite d'être importée (transport CO2)", "Elle est toxique pour les poissons", "Elle est non recyclable"],
+    question: "Why does coconut fiber have a negative environmental impact despite its natural origin?",
+    options: ["It requires a lot of water", "It needs to be imported (transport CO2)", "It is toxic to fish", "It is not recyclable"],
     correctAnswerIndex: 1,
-    explanation: "Le transport sur de longues distances (importation) augmente considérablement son bilan carbone."
+    explanation: "Long-distance transport (importation) significantly increases its carbon footprint."
   },
   {
     id: 37,
-    question: "Quel problème peut survenir avec la laine de verre et la ouate de cellulose au fil du temps ?",
-    options: ["Elles deviennent radioactives", "Elles sont sujettes au tassement (settling)", "Elles s'évaporent", "Elles deviennent conductrices d'électricité"],
+    question: "What problem can occur with glass wool and cellulose insulation over time?",
+    options: ["They become radioactive", "They are susceptible to settling", "They evaporate", "They become electrically conductive"],
     correctAnswerIndex: 1,
-    explanation: "Elles ont tendance à se tasser avec le temps, ce qui peut réduire leur performance isolante en haut des murs."
+    explanation: "They tend to settle over time, which can reduce their insulating performance at the top of walls."
   },
   {
     id: 38,
-    question: "Quel équipement de protection est recommandé pour poser de la laine de mouton ?",
-    options: ["Des lunettes de soleil", "Un masque et des gants", "Des bouchons d'oreilles", "Une combinaison de plongée"],
+    question: "What protective equipment is recommended when installing sheep's wool?",
+    options: ["Sunglasses", "A mask and gloves", "Earplugs", "A wetsuit"],
     correctAnswerIndex: 1,
-    explanation: "Bien que naturelle, elle peut contenir des produits de traitement, il est donc conseillé de porter masque et gants."
+    explanation: "Although natural, it may contain treatment products, so wearing a mask and gloves is advised."
   },
   {
     id: 39,
-    question: "Quelle est la technique d'isolation qui implique une 'contre-cloison' (lining wall) ?",
-    options: ["L'Isolation Thermique par l'Extérieur (ITE)", "L'Isolation Thermique par l'Intérieur (ITI)", "L'isolation des combles perdus", "L'isolation sous vide"],
+    question: "Which insulation technique involves a 'lining wall'?",
+    options: ["External Thermal Insulation (ETI)", "Internal Thermal Insulation (ITI)", "Attic insulation", "Vacuum insulation"],
     correctAnswerIndex: 1,
-    explanation: "L'ITI (Isolation par l'Intérieur) nécessite souvent la création d'une contre-cloison pour masquer l'isolant."
+    explanation: "ITI (Internal Insulation) often requires creating a lining wall (counter-partition) to hide the insulation."
   },
   {
     id: 40,
-    question: "Quel est un avantage financier indirect de l'isolation mentionné dans l'introduction ?",
-    options: ["Elle est remboursée par la mairie", "Elle augmente la valeur du bâtiment", "Elle permet de vendre de l'électricité", "Elle est gratuite"],
+    question: "What is an indirect financial benefit of insulation mentioned in the introduction?",
+    options: ["It is reimbursed by the city", "It increases the value of the building", "It allows selling electricity", "It is free"],
     correctAnswerIndex: 1,
-    explanation: "Une bonne isolation augmente la valeur patrimoniale (immobilière) du bâtiment."
+    explanation: "Good insulation increases the property value of the building."
   }
 ];
 
 export const QUIZ_3: Question[] = [
   {
     id: 41,
-    question: "Quel est le principe physique fondamental pour qu'un matériau soit un bon isolant thermique ?",
-    options: ["Il doit être capable de conduire l'électricité.", "Il doit être très lourd et dense pour bloquer la chaleur.", "Il doit emprisonner de l'air immobile (conductivité très faible).", "Il doit être composé de métal pur."],
+    question: "What is the fundamental physical principle for a material to be a good thermal insulator?",
+    options: ["It must be able to conduct electricity.", "It must be very heavy and dense to block heat.", "It must trap still air (very low conductivity).", "It must be composed of pure metal."],
     correctAnswerIndex: 2,
-    explanation: "L'air immobile est un très mauvais conducteur de chaleur, c'est la base de la plupart des isolants."
+    explanation: "Still air is a very poor conductor of heat; this is the basis of most insulators."
   },
   {
     id: 42,
-    question: "Si l'on compare l'Isolation par l'Extérieur (ITE) et l'Isolation par l'Intérieur (ITI), quel est l'avantage majeur de l'ITE ?",
-    options: ["Elle est moins chère à installer.", "Elle réduit la surface habitable de la maison.", "Elle traite efficacement les ponts thermiques et préserve l'inertie du bâtiment.", "Elle ne nécessite aucun échafaudage."],
+    question: "Comparing External Insulation (ETI) and Internal Insulation (ITI), what is the major advantage of ETI?",
+    options: ["It is cheaper to install.", "It reduces the living space of the house.", "It effectively treats thermal bridges and preserves building inertia.", "It requires no scaffolding."],
     correctAnswerIndex: 2,
-    explanation: "L'ITE enveloppe le bâtiment, supprimant les ponts thermiques de structure et gardant la masse des murs à l'intérieur pour l'inertie."
+    explanation: "ETI wraps the building, eliminating structural thermal bridges and keeping the wall mass inside for inertia."
   },
   {
     id: 43,
-    question: "Quelle formule permet de calculer la Résistance Thermique (R) d'un isolant ?",
-    options: ["R = épaisseur (e) / conductivité thermique (λ)", "R = conductivité thermique (λ) * épaisseur (e)", "R = 1 / épaisseur (e)", "R = épaisseur (e) + conductivité thermique (λ)"],
+    question: "What formula allows calculating the Thermal Resistance (R) of an insulator?",
+    options: ["R = thickness (e) / thermal conductivity (λ)", "R = thermal conductivity (λ) * thickness (e)", "R = 1 / thickness (e)", "R = thickness (e) + thermal conductivity (λ)"],
     correctAnswerIndex: 0,
-    explanation: "Plus l'épaisseur est grande et la conductivité faible, plus la résistance R est élevée."
+    explanation: "The greater the thickness and the lower the conductivity, the higher the resistance R."
   },
   {
     id: 44,
-    question: "Qu'est-ce qu'un 'pont thermique' ?",
-    options: ["Un système de chauffage performant.", "Une passerelle reliant deux bâtiments isolés.", "Une zone de faiblesse dans l'enveloppe du bâtiment par où la chaleur s'échappe.", "Un matériau isolant posé au sol."],
+    question: "What is a 'thermal bridge'?",
+    options: ["A high-performance heating system.", "A walkway connecting two insulated buildings.", "A weak zone in the building envelope where heat escapes.", "An insulating material placed on the ground."],
     correctAnswerIndex: 2,
-    explanation: "C'est une rupture dans la continuité de l'isolant (jonction mur/dalle, angles) qui laisse fuir la chaleur."
+    explanation: "It is a break in the continuity of the insulation (wall/slab junction, corners) that lets heat escape."
   },
   {
     id: 45,
-    question: "Outre l'aspect thermique, quelle autre propriété possèdent souvent les isolants fibreux (laines) ou poreux ?",
-    options: ["Ils sont imperméables à l'eau.", "Ils génèrent de l'électricité.", "Ils offrent une bonne absorption acoustique.", "Ils sont transparents."],
+    question: "Besides thermal aspects, what other property do fibrous (wools) or porous insulators often possess?",
+    options: ["They are waterproof.", "They generate electricity.", "They offer good acoustic absorption.", "They are transparent."],
     correctAnswerIndex: 2,
-    explanation: "La structure fibreuse ou poreuse piège les ondes sonores, offrant une bonne isolation phonique."
+    explanation: "The fibrous or porous structure traps sound waves, offering good sound insulation."
   },
   {
     id: 46,
-    question: "Quel est le risque mortel principal des isolants synthétiques (Polyuréthane, Polystyrène) en cas d'incendie ?",
-    options: ["Ils fondent et créent une inondation.", "Ils dégagent des gaz/fumées toxiques.", "Ils deviennent radioactifs.", "Ils explosent violemment."],
+    question: "What is the main deadly risk of synthetic insulators (Polyurethane, Polystyrene) in case of fire?",
+    options: ["They melt and create a flood.", "They release toxic gases/fumes.", "They become radioactive.", "They explode violently."],
     correctAnswerIndex: 1,
-    explanation: "La combustion des plastiques libère des fumées très toxiques (cyanure, etc.) qui sont mortelles si inhalées."
+    explanation: "Combustion of plastics releases very toxic fumes (cyanide, etc.) which are deadly if inhaled."
   },
   {
     id: 47,
-    question: "Pourquoi les laines minérales (verre, roche) ont-elles une énergie grise assez élevée ?",
-    options: ["Parce qu'elles viennent de la lune.", "Parce qu'elles contiennent du pétrole.", "Parce qu'elles nécessitent des fours à très haute température pour fondre le sable ou la roche.", "Parce qu'elles sont transportées par avion uniquement."],
+    question: "Why do mineral wools (glass, rock) have relatively high embodied energy?",
+    options: ["Because they come from the moon.", "Because they contain oil.", "Because they require furnaces at very high temperatures to melt sand or rock.", "Because they are transported by plane only."],
     correctAnswerIndex: 2,
-    explanation: "La fusion de la roche ou du verre demande une énergie considérable (haute température)."
+    explanation: "Melting rock or glass requires considerable energy (high temperature)."
   },
   {
     id: 48,
-    question: "Parmi ces matériaux, lequel a l'énergie grise la plus élevée (env. 974 kWh/m³) ?",
-    options: ["La paille.", "La ouate de cellulose.", "Le Polyuréthane.", "Le liège."],
+    question: "Among these materials, which has the highest embodied energy (approx. 974 kWh/m³)?",
+    options: ["Straw.", "Cellulose insulation.", "Polyurethane.", "Cork."],
     correctAnswerIndex: 2,
-    explanation: "Le Polyuréthane est un produit issu de la chimie lourde, très énergivore à fabriquer."
+    explanation: "Polyurethane is a product of heavy chemistry, very energy-intensive to manufacture."
   },
   {
     id: 49,
-    question: "Quel matériau naturel peut voir son bilan carbone alourdi s'il est importé de loin (transport) ?",
-    options: ["La paille locale.", "La fibre de coco.", "La laine de verre fabriquée sur place.", "Le polystyrène."],
+    question: "Which natural material can see its carbon footprint worsened if imported from far away (transport)?",
+    options: ["Local straw.", "Coconut fiber.", "Glass wool manufactured on site.", "Polystyrene."],
     correctAnswerIndex: 1,
-    explanation: "La fibre de coco provient souvent de pays tropicaux lointains, le transport dégrade son bilan écologique."
+    explanation: "Coconut fiber often comes from distant tropical countries; transport degrades its ecological balance."
   },
   {
     id: 50,
-    question: "Quel problème de santé est associé à la pose de la laine de verre ?",
-    options: ["Irritation de la peau et des voies respiratoires (fibres).", "Risque d'intoxication alimentaire.", "Brûlures chimiques graves immédiates.", "Perte de la vue."],
+    question: "What health problem is associated with installing glass wool?",
+    options: ["Skin and respiratory irritation (fibers).", "Risk of food poisoning.", "Immediate severe chemical burns.", "Loss of sight."],
     correctAnswerIndex: 0,
-    explanation: "Les fibres microscopiques sont irritantes pour la peau et les poumons lors de la manipulation."
+    explanation: "Microscopic fibers are irritating to the skin and lungs during handling."
   },
   {
     id: 51,
-    question: "Quelle est la matière première de la ouate de cellulose ?",
-    options: ["Le coton neuf.", "La laine de mouton.", "Le papier journal recyclé.", "Le bois déchiqueté."],
+    question: "What is the raw material of cellulose insulation?",
+    options: ["New cotton.", "Sheep's wool.", "Recycled newspaper.", "Chipped wood."],
     correctAnswerIndex: 2,
-    explanation: "Elle est fabriquée en broyant du papier journal recyclé, auquel on ajoute des sels de bore."
+    explanation: "It is manufactured by shredding recycled newspaper, to which boron salts are added."
   },
   {
     id: 52,
-    question: "Quel avantage les isolants bio-sourcés (bois, chanvre) ont-ils sur le confort d'été par rapport aux synthétiques ?",
-    options: ["Ils refroidissent l'air comme un climatiseur.", "Leur densité plus élevée offre un meilleur déphasage thermique.", "Ils sont plus blancs et réfléchissent la lumière.", "Ils sont plus légers."],
+    question: "What advantage do bio-sourced insulators (wood, hemp) have over synthetics regarding summer comfort?",
+    options: ["They cool the air like an air conditioner.", "Their higher density offers better thermal phase shift.", "They are whiter and reflect light.", "They are lighter."],
     correctAnswerIndex: 1,
-    explanation: "Leur capacité à stocker la chaleur (inertie) retarde l'entrée de la chaleur dans la maison en été."
+    explanation: "Their ability to store heat (inertia) delays the entry of heat into the house in summer."
   },
   {
     id: 53,
-    question: "Quelle est la particularité de la culture du chanvre (Hemp) ?",
-    options: ["Elle nécessite beaucoup de pesticides.", "C'est une plante à croissance rapide, imputrescible et stockant du CO2.", "Elle ne pousse que dans les pays tropicaux.", "Elle nécessite énormément d'eau potable."],
+    question: "What is the particularity of hemp cultivation?",
+    options: ["It requires a lot of pesticides.", "It is a fast-growing, rot-proof plant that stores CO2.", "It only grows in tropical countries.", "It requires huge amounts of drinking water."],
     correctAnswerIndex: 1,
-    explanation: "Le chanvre est très écologique : il pousse vite, sans pesticides, et absorbe beaucoup de CO2."
+    explanation: "Hemp is very ecological: it grows fast, without pesticides, and absorbs a lot of CO2."
   },
   {
     id: 54,
-    question: "Quel est l'inconvénient lié à la production du liège (Cork) ?",
-    options: ["L'arbre doit être abattu pour récolter le liège.", "Le liège pourrit à l'humidité.", "Il faut attendre 8 à 10 ans pour que l'écorce se reconstitue entre deux récoltes.", "C'est un produit dérivé du pétrole."],
+    question: "What is the disadvantage linked to cork production?",
+    options: ["The tree must be cut down to harvest cork.", "Cork rots in humidity.", "One must wait 8 to 10 years for the bark to regenerate between two harvests.", "It is a petroleum derivative."],
     correctAnswerIndex: 2,
-    explanation: "La ressource est renouvelable mais lente à se régénérer."
+    explanation: "The resource is renewable but slow to regenerate."
   },
   {
     id: 55,
-    question: "Pour obtenir une isolation équivalente à 20 cm de polystyrène, quelle épaisseur de paille faut-il environ ?",
-    options: ["10 cm.", "20 cm.", "40 cm.", "1 mètre."],
+    question: "To obtain insulation equivalent to 20 cm of polystyrene, what thickness of straw is needed roughly?",
+    options: ["10 cm.", "20 cm.", "40 cm.", "1 meter."],
     correctAnswerIndex: 2,
-    explanation: "La paille isole moins bien par cm que le polystyrène, il faut donc environ le double d'épaisseur."
+    explanation: "Straw insulates less effectively per cm than polystyrene, so about double the thickness is needed."
   },
   {
     id: 56,
-    question: "Quel matériau est considéré comme le solide le plus léger du monde et un isolant extrêmement performant ?",
-    options: ["Le béton cellulaire.", "L'Aérogel.", "La laine de roche.", "Le verre cellulaire."],
+    question: "Which material is considered the lightest solid in the world and an extremely high-performance insulator?",
+    options: ["Aerated concrete.", "Aerogel.", "Rock wool.", "Cellular glass."],
     correctAnswerIndex: 1,
-    explanation: "L'Aérogel est composé à 99.8% d'air, ce qui le rend ultra-léger et isolant."
+    explanation: "Aerogel is composed of 99.8% air, making it ultra-light and insulating."
   },
   {
     id: 57,
-    question: "Quelle est la caractéristique du Panneau Isolant Sous Vide (VIP) ?",
-    options: ["Très fin (ex: 35mm) pour une très haute performance, mais fragile au percement.", "Très épais et très lourd.", "Liquide à la pose.", "Fabriqué à base de plumes de canard."],
+    question: "What is the characteristic of the Vacuum Insulation Panel (VIP)?",
+    options: ["Very thin (e.g., 35mm) for very high performance, but fragile to puncture.", "Very thick and very heavy.", "Liquid during installation.", "Made from duck feathers."],
     correctAnswerIndex: 0,
-    explanation: "Le vide est le meilleur isolant, permettant une extrême finesse, mais si on perce le panneau, il perd ses propriétés."
+    explanation: "Vacuum is the best insulator, allowing extreme thinness, but if the panel is pierced, it loses its properties."
   },
   {
     id: 58,
-    question: "La brique 'Monomur' et le béton cellulaire font partie de quelle technique ?",
-    options: ["Isolation par l'intérieur (doublage).", "Isolation répartie (le mur porteur est lui-même isolant).", "Isolation par l'extérieur sous enduit.", "Isolation des combles perdus."],
+    question: "The 'Monomur' brick and aerated concrete belong to which technique?",
+    options: ["Internal insulation (lining).", "Distributed insulation (the load-bearing wall itself is insulating).", "External insulation under render.", "Lost attic insulation."],
     correctAnswerIndex: 1,
-    explanation: "Ces matériaux porteurs sont suffisamment isolants pour ne pas nécessiter d'isolation rapportée supplémentaire."
+    explanation: "These load-bearing materials are sufficiently insulating not to require additional added insulation."
   },
   {
     id: 59,
-    question: "Le Polystyrène Extrudé (XPS) et le Polystyrène Expansé (EPS) sont des isolants de quelle famille ?",
-    options: ["Minérale.", "Bio-sourcée.", "Synthétique (Pétrochimique).", "Animale."],
+    question: "Extruded Polystyrene (XPS) and Expanded Polystyrene (EPS) belong to which family of insulators?",
+    options: ["Mineral.", "Bio-sourced.", "Synthetic (Petrochemical).", "Animal."],
     correctAnswerIndex: 2,
-    explanation: "Ce sont des plastiques dérivés du pétrole."
+    explanation: "These are plastics derived from petroleum."
   },
   {
     id: 60,
-    question: "Le béton de chanvre est généralement un mélange de chènevotte (chanvre) et de quel liant ?",
-    options: ["De ciment pur.", "De chaux (et eau).", "De colle à bois.", "De goudron."],
+    question: "Hemp concrete is generally a mixture of hemp hurds and which binder?",
+    options: ["Pure cement.", "Lime (and water).", "Wood glue.", "Tar."],
     correctAnswerIndex: 1,
-    explanation: "Le mélange Chanvre + Chaux crée un béton léger, isolant et respirant."
+    explanation: "The Hemp + Lime mixture creates a lightweight, insulating, and breathable concrete."
   }
 ];
 

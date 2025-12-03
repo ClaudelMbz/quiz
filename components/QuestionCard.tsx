@@ -44,7 +44,7 @@ const QuestionCard: React.FC<QuestionCardProps> = ({
       <div className="mb-6">
         <div className="flex justify-between text-sm font-semibold text-slate-500 dark:text-slate-400 mb-2">
           <span>Question {currentQuestionIndex + 1}/{totalQuestions}</span>
-          <span>{Math.round(((currentQuestionIndex) / totalQuestions) * 100)}% complété</span>
+          <span>{Math.round(((currentQuestionIndex) / totalQuestions) * 100)}% completed</span>
         </div>
         <div className="w-full bg-slate-200 dark:bg-slate-700 rounded-full h-2.5 overflow-hidden">
           <div 
@@ -111,10 +111,10 @@ const QuestionCard: React.FC<QuestionCardProps> = ({
                   <h3 className={`font-bold ${
                     selectedOptionIndex === question.correctAnswerIndex ? 'text-green-800 dark:text-green-300' : 'text-red-800 dark:text-red-300'
                   }`}>
-                    {selectedOptionIndex === question.correctAnswerIndex ? 'Correct !' : 'Incorrect'}
+                    {selectedOptionIndex === question.correctAnswerIndex ? 'Correct!' : 'Incorrect'}
                   </h3>
                   <p className="text-slate-700 dark:text-slate-300 mt-1 text-sm leading-relaxed">
-                    <span className="font-semibold">Explication :</span> {question.explanation}
+                    <span className="font-semibold">Explanation:</span> {question.explanation}
                   </p>
                 </div>
               </div>
@@ -124,7 +124,7 @@ const QuestionCard: React.FC<QuestionCardProps> = ({
               onClick={onNext}
               className="w-full py-4 bg-blue-600 hover:bg-blue-700 dark:bg-blue-600 dark:hover:bg-blue-500 text-white text-lg font-bold rounded-xl shadow-lg transition-transform transform hover:scale-[1.02] active:scale-[0.98]"
             >
-              {currentQuestionIndex < totalQuestions - 1 ? "Question Suivante →" : "Voir les Résultats"}
+              {currentQuestionIndex < totalQuestions - 1 ? "Next Question →" : "See Results"}
             </button>
           </div>
         )}

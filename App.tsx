@@ -86,7 +86,7 @@ const App: React.FC = () => {
         <div className="max-w-4xl mx-auto px-4 py-4 flex justify-between items-center">
           <div className="flex items-center gap-2 cursor-pointer" onClick={handleRestart}>
             <span className="text-2xl">🏠</span>
-            <span className="font-bold text-slate-800 dark:text-white text-lg hidden sm:block">Le Quiz Isolation</span>
+            <span className="font-bold text-slate-800 dark:text-white text-lg hidden sm:block">Thermal Insulation Quiz</span>
           </div>
           
           <div className="flex items-center gap-4">
@@ -99,7 +99,7 @@ const App: React.FC = () => {
             <button 
               onClick={toggleDarkMode}
               className="p-2 rounded-full hover:bg-slate-100 dark:hover:bg-slate-800 text-slate-600 dark:text-slate-300 transition-colors"
-              title={darkMode ? "Passer en mode clair" : "Passer en mode sombre"}
+              title={darkMode ? "Switch to Light Mode" : "Switch to Dark Mode"}
             >
               {darkMode ? (
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path></svg>
@@ -141,7 +141,7 @@ const App: React.FC = () => {
       </main>
 
       <footer className="text-center py-6 text-slate-400 dark:text-slate-600 text-sm">
-        <p>© 2024 Quiz Isolation Thermique - Conçu pour l'apprentissage</p>
+        <p>© 2024 Thermal Insulation Quiz - Designed for learning</p>
       </footer>
     </div>
   );
