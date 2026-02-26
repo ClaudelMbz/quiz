@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { QUIZ_1, QUIZ_2, QUIZ_3, ALL_QUESTIONS } from './constants';
+import { QUIZ_AI_1, QUIZ_AI_2, QUIZ_AI_3, ALL_AI_QUESTIONS } from './constants';
 import { QuizState, Question } from './types';
 import QuizStart from './components/QuizStart';
 import QuestionCard from './components/QuestionCard';
