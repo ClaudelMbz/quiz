@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { QUIZ_AI_1, QUIZ_AI_2, QUIZ_AI_3, ALL_AI_QUESTIONS } from './constants';
+import { QUIZ_FREQ_1, QUIZ_FREQ_2, QUIZ_FREQ_3, QUIZ_FREQ_4, ALL_FREQ_QUESTIONS } from './constants';
 import { QuizState, Question } from './types';
 import QuizStart from './components/QuizStart';
 import QuestionCard from './components/QuestionCard';
@@ -25,24 +25,27 @@ const App: React.FC = () => {
     setDarkMode(!darkMode);
   };
 
-  const handleStart = (mode: 'quiz1' | 'quiz2' | 'quiz3' | 'all') => {
+  const handleStart = (mode: 'quiz1' | 'quiz2' | 'quiz3' | 'quiz4' | 'all') => {
     let selectedQuestions: Question[] = [];
 
     switch (mode) {
       case 'quiz1':
-        selectedQuestions = QUIZ_AI_1;
+        selectedQuestions = QUIZ_FREQ_1;
         break;
       case 'quiz2':
-        selectedQuestions = QUIZ_AI_2;
+        selectedQuestions = QUIZ_FREQ_2;
         break;
       case 'quiz3':
-        selectedQuestions = QUIZ_AI_3;
+        selectedQuestions = QUIZ_FREQ_3;
+        break;
+      case 'quiz4':
+        selectedQuestions = QUIZ_FREQ_4;
         break;
       case 'all':
-        selectedQuestions = ALL_AI_QUESTIONS;
+        selectedQuestions = ALL_FREQ_QUESTIONS;
         break;
       default:
-        selectedQuestions = QUIZ_AI_1;
+        selectedQuestions = QUIZ_FREQ_1;
     }
 
     setActiveQuestions(selectedQuestions);
@@ -83,8 +86,10 @@ const App: React.FC = () => {
       <header className="bg-white dark:bg-slate-900 shadow-sm border-b dark:border-slate-800 sticky top-0 z-10 transition-colors duration-200">
         <div className="max-w-4xl mx-auto px-4 py-4 flex justify-between items-center">
           <div className="flex items-center gap-2 cursor-pointer" onClick={handleRestart}>
-            <span className="text-2xl">🤖</span>
-            <span className="font-bold text-slate-800 dark:text-white text-lg hidden sm:block">ML & Deep Learning Quiz</span>
+            <span className="text-2xl">⚡</span>
+            <span className="font-bold text-slate-800 dark:text-white text-lg hidden sm:block">
+              Régulation de Fréquence – Quiz
+            </span>
           </div>
 
           <div className="flex items-center gap-4">
@@ -100,9 +105,15 @@ const App: React.FC = () => {
               title={darkMode ? "Switch to Light Mode" : "Switch to Dark Mode"}
             >
               {darkMode ? (
-                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path></svg>
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2}
+                    d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+                </svg>
               ) : (
-                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path></svg>
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2}
+                    d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+                </svg>
               )}
             </button>
           </div>
@@ -137,7 +148,7 @@ const App: React.FC = () => {
       </main>
 
       <footer className="text-center py-6 text-slate-400 dark:text-slate-600 text-sm">
-        <p>© 2024 ML & Deep Learning Quiz - Designed for learning</p>
+        <p>© 2025 ICAM Paris · o3.6 CROSS PBL6 MIA-EEE – Régulation de fréquence du réseau électrique</p>
       </footer>
     </div>
   );
